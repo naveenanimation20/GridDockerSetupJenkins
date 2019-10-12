@@ -25,7 +25,7 @@ public class BaseTest {
 		capabilities.setCapability("browserName", browser);
 
 		// Set the Hub url (Docker exposed hub URL)
-		driver.set(new RemoteWebDriver(new URL("http://192.168.99.100:4446/wd/hub"), capabilities));
+		driver.set(new RemoteWebDriver(new URL("http://192.168.99.100:4444/wd/hub"), capabilities));
 	}
 
 	public WebDriver getDriver() {

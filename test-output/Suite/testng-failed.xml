@@ -16,26 +16,6 @@
       <class name="Mytests.SecondTest"/>
     </classes>
   </test> <!-- FirefoxTest -->
-  <test name="ChromeTest(failed)" parallel="tests">
-    <parameter name="browser" value="chrome"/>
-    <classes>
-      <class name="Mytests.FirstTest">
-        <methods>
-          <include name="FacebookTest"/>
-          <include name="InstagramTest"/>
-          <include name="GmailTest"/>
-          <include name="setupTest"/>
-          <include name="setupTest"/>
-        </methods>
-      </class> <!-- Mytests.FirstTest -->
-      <class name="Mytests.SecondTest">
-        <methods>
-          <include name="MyntraTest"/>
-          <include name="ThoughtWorksTest"/>
-        </methods>
-      </class> <!-- Mytests.SecondTest -->
-    </classes>
-  </test> <!-- ChromeTest(failed) -->
   <test name="FirefoxTest(failed)" parallel="tests">
     <parameter name="browser" value="firefox"/>
     <classes>
@@ -56,4 +36,24 @@
       </class> <!-- Mytests.SecondTest -->
     </classes>
   </test> <!-- FirefoxTest(failed) -->
+  <test name="ChromeTest(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Mytests.FirstTest">
+        <methods>
+          <include name="FacebookTest"/>
+          <include name="InstagramTest"/>
+          <include name="GmailTest"/>
+          <include name="setupTest"/>
+          <include name="setupTest"/>
+        </methods>
+      </class> <!-- Mytests.FirstTest -->
+      <class name="Mytests.SecondTest">
+        <methods>
+          <include name="MyntraTest"/>
+          <include name="ThoughtWorksTest"/>
+        </methods>
+      </class> <!-- Mytests.SecondTest -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
